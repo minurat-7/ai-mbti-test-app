@@ -21,7 +21,7 @@ if GEMINI_API_KEY == "여기에_실제_API_키를_입력하세요" or not GEMINI
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     # API 키 유효성 간접 확인 (모델 로드 시도) - 모델 이름 수정
-    model_check = genai.GenerativeModel('models/gemini-1.5-pro-latest') # ★★★ 수정된 모델 이름 ★★★
+    model_check = genai.GenerativeModel('models/gemini-2.5-pro-preview-05-06') # ★★★ 수정된 모델 이름 ★★★
 except Exception as e:
     st.error(f"API 키 설정 또는 모델 로드 중 오류가 발생했습니다: {e}")
     st.error("입력한 API 키가 정확한지, Google AI Studio에서 발급받은 유효한 키인지 확인해주세요.")
